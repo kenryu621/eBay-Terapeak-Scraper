@@ -32,6 +32,7 @@ This application automates the process of searching for items on eBay's Terapeak
 
 - Windows OS
 - Python 3.x (if running from source)
+- Python UV (for virtual environment management)
 - Chrome browser
 - eBay account with access to Terapeak Research
 
@@ -39,7 +40,30 @@ This application automates the process of searching for items on eBay's Terapeak
 
 #### From Source Code
 
-1. Run `main.py`
+1. Create a virtual environment using UV:
+
+   ```bash
+   uv venv .venv
+   ```
+
+2. Activate the virtual environment:
+   - On Windows:
+
+     ```bash
+     .venv\\Scripts\\activate
+     ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the main script:
+
+   ```bash
+   python main.py
+   ```
 
 ### Setup Instructions
 
@@ -61,7 +85,7 @@ This application automates the process of searching for items on eBay's Terapeak
 
 The scraper generates the following outputs:
 
-1. **Excel Spreadsheets**: 
+1. **Excel Spreadsheets**:
    - Individual spreadsheets for each keyword
    - A combined spreadsheet with all scraped data
    - Each spreadsheet contains sheets for both 30-day and 90-day periods

@@ -1,0 +1,7 @@
+attr==0.3.2
+Pillow==11.2.1
+python_dateutil==2.9.0.post0
+Requests==2.32.3
+selenium==4.32.0
+webdriver_manager==4.0.2
+XlsxWriter==3.2.2
